@@ -1,0 +1,697 @@
+[
+  {
+    "id": "SCH-PM-KISAN-001",
+    "code": "PM-KISAN",
+    "title": "Pradhan Mantri Kisan Samman Nidhi",
+    "shortDescription": "Income support of ₹6,000 per year in three equal installments to all landholding farmer families across the country.",
+    "detailedOverview": "PM-KISAN is a Central Sector Scheme with 100% funding from Government of India. It has become operational from 1.12.2018. Under the scheme an income support of ₹6,000/- per year in three equal installments is provided to all land-holding farmer families.",
+    "sector": "Agriculture",
+    "level": "Central",
+    "state": "All India",
+    "ministry": "Ministry of Agriculture and Farmers Welfare",
+    "department": "Department of Agriculture and Cooperation",
+    "benefits": [
+      "Direct cash benefit of ₹6,000 annually credited directly into bank accounts via DBT",
+      "Disbursed in 3 equal four-monthly installments of ₹2,000 each",
+      "Financial security to purchase seeds, fertilizers, and farm equipment"
+    ],
+    "financialAssistance": "₹6,000 per year in 3 direct bank transfers",
+    "rules": [
+      {
+        "id": "pmk_occ",
+        "field": "occupation",
+        "operator": "equals",
+        "value": "Farmer",
+        "description": "Applicant must be an operational farmer / agriculturalist",
+        "mandatory": true
+      },
+      {
+        "id": "pmk_land",
+        "field": "landHoldingHectares",
+        "operator": "less_than_or_equal",
+        "value": 2,
+        "description": "Farmer family must possess cultivable landholding under 2.0 hectares",
+        "mandatory": true
+      },
+      {
+        "id": "pmk_age",
+        "field": "age",
+        "operator": "greater_than_or_equal",
+        "value": 18,
+        "description": "Landholder must be an adult aged 18 years or above",
+        "mandatory": true
+      }
+    ],
+    "exclusions": [
+      "Institutional landholders",
+      "Farmer families holding constitutional posts",
+      "Serving or retired officers and employees of Central/State Government Ministries",
+      "Income Tax payees in last assessment year"
+    ],
+    "requiredDocuments": [
+      {
+        "id": "doc_aadhaar",
+        "name": "Aadhaar Card",
+        "description": "Mandatory Aadhaar authentication for DBT transfer",
+        "mandatory": true,
+        "issuingAuthority": "UIDAI"
+      },
+      {
+        "id": "doc_land",
+        "name": "Land Ownership Document (Khasra/Khatauni / RoR)",
+        "description": "Updated Record of Rights proving cultivable land ownership",
+        "mandatory": true,
+        "issuingAuthority": "Revenue Department"
+      },
+      {
+        "id": "doc_bank",
+        "name": "Aadhaar-Seeded Bank Passbook",
+        "description": "Active bank account linked with NPCI for DBT",
+        "mandatory": true,
+        "issuingAuthority": "Commercial / Regional Rural Bank"
+      }
+    ],
+    "applicationProcedure": [
+      "Self-registration via PM-KISAN portal or via Common Service Centre (CSC)",
+      "Provide Aadhaar number, state, district, and land ownership Khata/Khasra details",
+      "Verification by State Nodal Revenue Officer",
+      "Direct DBT transfer upon validation"
+    ],
+    "effectiveDates": {
+      "isOngoing": true,
+      "startDate": "2018-12-01"
+    },
+    "officialUrl": "https://pmkisan.gov.in",
+    "portalHelpline": "155261 / 011-24300606",
+    "status": "approved",
+    "isDemo": false,
+    "version": 1,
+    "sourceEvidence": {
+      "documentId": "DOC-GAZ-AGRI-2019",
+      "documentTitle": "Operational Guidelines of Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+      "gazetteNumber": "No. 1-1/2019-Credit-I",
+      "gazetteDate": "2019-02-01",
+      "pageReferences": [
+        3,
+        4,
+        7
+      ],
+      "extractedParagraphSnippet": "Under the scheme an income support of ₹6,000/- per year in three equal installments will be provided to small and marginal landholder farmer families subject to statutory exclusions."
+    },
+    "createdAt": "2026-01-10T10:00:00.000Z",
+    "updatedAt": "2026-01-10T10:00:00.000Z",
+    "approvedAt": "2026-01-10T11:00:00.000Z",
+    "approvedBy": "Dr. R. Sharma (Director of Agricultural Credit)"
+  },
+  {
+    "id": "SCH-PM-JAY-002",
+    "code": "AB-PMJAY",
+    "title": "Ayushman Bharat Pradhan Mantri Jan Arogya Yojana",
+    "shortDescription": "World's largest government-funded health assurance scheme providing ₹5 Lakh per family per year for secondary and tertiary care hospitalization.",
+    "detailedOverview": "Ayushman Bharat PM-JAY provides health cover of ₹5 Lakh per family per year for secondary and tertiary care hospitalization to over 12 crore poor and vulnerable families (approximately 55 crore beneficiaries) that form the bottom 40% of the Indian population.",
+    "sector": "Healthcare",
+    "level": "Central",
+    "state": "All India",
+    "ministry": "Ministry of Health and Family Welfare",
+    "department": "National Health Authority (NHA)",
+    "benefits": [
+      "Cashless and paperless access to services for the beneficiary at the point of care",
+      "Covers up to 3 days of pre-hospitalization and 15 days post-hospitalization expenses",
+      "Over 1,949 medical procedures covered including surgeries, diagnostics, and medications",
+      "No restriction on family size, age, or gender"
+    ],
+    "financialAssistance": "₹5,00,000 health cover per family per year",
+    "rules": [
+      {
+        "id": "jay_bpl",
+        "field": "isBplCardHolder",
+        "operator": "is_true",
+        "value": true,
+        "description": "Household must be categorized under SECC 2011 Deprivation Criteria or hold valid State BPL / Ration Card",
+        "mandatory": true
+      },
+      {
+        "id": "jay_income",
+        "field": "annualIncome",
+        "operator": "less_than_or_equal",
+        "value": 250000,
+        "description": "Household annual income must not exceed ₹2,50,000",
+        "mandatory": false
+      }
+    ],
+    "exclusions": [
+      "Families having pucca houses with more than 3 rooms",
+      "Households with motorized two/three/four wheelers or agricultural equipment",
+      "Government employees or households with monthly income > ₹10,000 in rural / SECC non-deprived"
+    ],
+    "requiredDocuments": [
+      {
+        "id": "doc_ayush_aadhaar",
+        "name": "Aadhaar Card or Ration Card",
+        "description": "Primary ID for beneficiary verification",
+        "mandatory": true,
+        "issuingAuthority": "UIDAI / Food & Civil Supplies"
+      },
+      {
+        "id": "doc_bpl",
+        "name": "SECC 2011 Letter or Ration Card",
+        "description": "Evidence of inclusion in deprivation database",
+        "mandatory": true,
+        "issuingAuthority": "State Civil Supplies"
+      }
+    ],
+    "applicationProcedure": [
+      "Check eligibility online on mera.pmjay.gov.in or visit any empaneled hospital",
+      "Contact Ayushman Mitra at hospital helpdesk with Aadhaar and Ration card",
+      "Complete e-KYC biometric verification",
+      "Instant generation of Ayushman Golden Card"
+    ],
+    "effectiveDates": {
+      "isOngoing": true,
+      "startDate": "2018-09-23"
+    },
+    "officialUrl": "https://pmjay.gov.in",
+    "portalHelpline": "14555 / 1800-111-565",
+    "status": "approved",
+    "isDemo": false,
+    "version": 1,
+    "sourceEvidence": {
+      "documentId": "DOC-GAZ-NHA-2018",
+      "documentTitle": "Ayushman Bharat National Health Protection Mission Guidelines",
+      "gazetteNumber": "MoHFW-NHPM-2018/14",
+      "gazetteDate": "2018-09-20",
+      "pageReferences": [
+        2,
+        5,
+        11
+      ],
+      "extractedParagraphSnippet": "PM-JAY provides financial protection up to 5 Lakh rupees per family per year for secondary and tertiary care hospitalization across public and empaneled private hospitals."
+    },
+    "createdAt": "2026-01-12T10:00:00.000Z",
+    "updatedAt": "2026-01-12T10:00:00.000Z",
+    "approvedAt": "2026-01-12T11:00:00.000Z",
+    "approvedBy": "National Health Authority Verification Cell"
+  },
+  {
+    "id": "SCH-PMEGP-003",
+    "code": "PMEGP",
+    "title": "Prime Minister's Employment Generation Programme",
+    "shortDescription": "Credit-linked subsidy programme to generate employment opportunities by establishing micro-enterprises in non-farm sectors with subsidies up to 35%.",
+    "detailedOverview": "PMEGP is a major credit-linked subsidy scheme administered by the Ministry of MSME through Khadi and Village Industries Commission (KVIC) as the single nodal agency at national level. Project cost up to ₹50 Lakhs for manufacturing units and ₹20 Lakhs for service sector.",
+    "sector": "MSME",
+    "level": "Central",
+    "state": "All India",
+    "ministry": "Ministry of Micro, Small and Medium Enterprises",
+    "department": "Khadi and Village Industries Commission (KVIC)",
+    "benefits": [
+      "Government subsidy of 15% to 25% for general category and 25% to 35% for special categories (SC/ST/OBC/Women/Minority)",
+      "Beneficiary contribution only 5% to 10% of total project cost",
+      "Collateral-free loans up to ₹10 Lakhs under CGTMSE cover",
+      "Entrepreneurship Development Programme (EDP) training included"
+    ],
+    "financialAssistance": "Up to 35% margin money subsidy on project cost up to ₹50 Lakhs",
+    "rules": [
+      {
+        "id": "pmegp_age",
+        "field": "age",
+        "operator": "greater_than_or_equal",
+        "value": 18,
+        "description": "Any individual aged 18 years or above is eligible",
+        "mandatory": true
+      },
+      {
+        "id": "pmegp_edu",
+        "field": "educationStatus",
+        "operator": "in",
+        "value": [
+          "school",
+          "undergraduate",
+          "postgraduate",
+          "vocational"
+        ],
+        "description": "For projects above ₹10 Lakh in manufacturing and ₹5 Lakh in service, minimum educational qualification is 8th pass / school",
+        "mandatory": true
+      }
+    ],
+    "exclusions": [
+      "Existing units or units that have already availed Government subsidy under any other central/state scheme",
+      "Businesses involving meat, intoxicants, or tobacco products",
+      "Crop cultivation and direct agriculture (non-farm processing allowed)"
+    ],
+    "requiredDocuments": [
+      {
+        "id": "doc_pmegp_id",
+        "name": "Aadhaar Card and PAN Card",
+        "description": "Proof of identity and tax identification",
+        "mandatory": true,
+        "issuingAuthority": "UIDAI / Income Tax"
+      },
+      {
+        "id": "doc_pmegp_dpr",
+        "name": "Detailed Project Report (DPR)",
+        "description": "Business viability, projected financials, and capital machinery quotes",
+        "mandatory": true,
+        "issuingAuthority": "Chartered Accountant or Industry Consultant"
+      },
+      {
+        "id": "doc_pmegp_caste",
+        "name": "Category / Caste Certificate",
+        "description": "Required for special category 35% higher subsidy claim",
+        "mandatory": false,
+        "issuingAuthority": "Tehsildar / SDO"
+      }
+    ],
+    "applicationProcedure": [
+      "Submit online application on KVIC PMEGP e-Portal (kviconline.gov.in/pmegpeportal)",
+      "Upload Detailed Project Report (DPR) and identity credentials",
+      "District Task Force Committee (DTFC) screening and recommendation to financing bank",
+      "Bank sanctions loan and disburses first tranche upon EDP training completion"
+    ],
+    "effectiveDates": {
+      "isOngoing": true,
+      "startDate": "2008-08-15"
+    },
+    "officialUrl": "https://www.kviconline.gov.in/pmegpeportal/pmegphome/index.jsp",
+    "portalHelpline": "1800-3000-0034",
+    "status": "approved",
+    "isDemo": false,
+    "version": 1,
+    "sourceEvidence": {
+      "documentId": "DOC-MSME-PMEGP-2022",
+      "documentTitle": "Revised Guidelines for Prime Minister Employment Generation Programme",
+      "gazetteNumber": "MSME/PMEGP/Cir/2022-23",
+      "gazetteDate": "2022-05-13",
+      "pageReferences": [
+        4,
+        6,
+        9
+      ],
+      "extractedParagraphSnippet": "PMEGP aims to facilitate setting up of micro enterprises in manufacturing and service sectors with margin money assistance up to 35% in rural areas for special categories."
+    },
+    "createdAt": "2026-01-15T10:00:00.000Z",
+    "updatedAt": "2026-01-15T10:00:00.000Z",
+    "approvedAt": "2026-01-15T11:00:00.000Z",
+    "approvedBy": "KVIC Joint Secretary (Enterprise)"
+  },
+  {
+    "id": "SCH-VIDYA-004",
+    "code": "PM-VIDYALAKSHMI",
+    "title": "Pradhan Mantri Vidya Lakshmi Higher Education Scheme",
+    "shortDescription": "Collateral-free educational loan and full interest subvention for meritorious students pursuing higher studies in top 860 NIRF-ranked institutions.",
+    "detailedOverview": "Approved by Union Cabinet, PM Vidya Lakshmi provides financial support to any youth admitted into higher educational institutions. For students with annual family income up to ₹8 Lakh, 3% interest subvention is offered during the moratorium period.",
+    "sector": "Education",
+    "level": "Central",
+    "state": "All India",
+    "ministry": "Ministry of Education",
+    "department": "Department of Higher Education",
+    "benefits": [
+      "Collateral-free, guarantor-free education loan up to ₹10 Lakhs",
+      "75% credit guarantee by Government of India for defaults up to ₹7.5 Lakh",
+      "Full interest subvention for family income up to ₹4.5 Lakh; 3% subvention for income up to ₹8 Lakh",
+      "Covers tuition fees, hostel charges, books, and study equipment"
+    ],
+    "financialAssistance": "Interest subvention on education loans up to ₹10,00,000",
+    "rules": [
+      {
+        "id": "vl_edu",
+        "field": "educationStatus",
+        "operator": "in",
+        "value": [
+          "undergraduate",
+          "postgraduate",
+          "vocational"
+        ],
+        "description": "Applicant must be enrolled in or admitted to recognized higher education",
+        "mandatory": true
+      },
+      {
+        "id": "vl_income",
+        "field": "annualIncome",
+        "operator": "less_than_or_equal",
+        "value": 800000,
+        "description": "Gross annual parental/family income must not exceed ₹8,00,000 for interest subsidy",
+        "mandatory": true
+      }
+    ],
+    "exclusions": [
+      "Students who have already availed another central government interest subsidy scheme (e.g. CSIS)",
+      "Students admitted through management quota without merit ranking"
+    ],
+    "requiredDocuments": [
+      {
+        "id": "doc_vl_adm",
+        "name": "Admission Offer Letter / Bonafide Certificate",
+        "description": "Proof of admission into NIRF-ranked higher educational institution",
+        "mandatory": true,
+        "issuingAuthority": "College / University Dean"
+      },
+      {
+        "id": "doc_vl_inc",
+        "name": "Income Certificate / ITR",
+        "description": "Competent authority certificate validating family income under ₹8 Lakh",
+        "mandatory": true,
+        "issuingAuthority": "Revenue Authority / IT Dept"
+      },
+      {
+        "id": "doc_vl_acad",
+        "name": "Class 10th and 12th Marksheets",
+        "description": "Academic records for merit appraisal",
+        "mandatory": true,
+        "issuingAuthority": "Recognized School Board"
+      }
+    ],
+    "applicationProcedure": [
+      "Register on PM-Vidya Lakshmi Unified Student Portal",
+      "Select bank and loan scheme with Common Educational Loan Application Form (CELAF)",
+      "Digital verification of admission and fee structure through DigiLocker",
+      "Direct disbursement to institution bank account"
+    ],
+    "effectiveDates": {
+      "isOngoing": true,
+      "startDate": "2024-11-06"
+    },
+    "officialUrl": "https://www.vidyalakshmi.co.in",
+    "portalHelpline": "1800-180-2222",
+    "status": "approved",
+    "isDemo": false,
+    "version": 1,
+    "sourceEvidence": {
+      "documentId": "DOC-CAB-EDU-2024",
+      "documentTitle": "Cabinet Decision on PM Vidya Lakshmi Education Loan Support Scheme",
+      "gazetteNumber": "PIB-Del-EDU/2024/78",
+      "gazetteDate": "2024-11-06",
+      "pageReferences": [
+        1,
+        2
+      ],
+      "extractedParagraphSnippet": "The Union Cabinet approves PM Vidya Lakshmi to provide financial support up to 10 Lakh rupees with 75% credit guarantee and interest subvention for students from families with income up to 8 Lakh."
+    },
+    "createdAt": "2026-01-20T10:00:00.000Z",
+    "updatedAt": "2026-01-20T10:00:00.000Z",
+    "approvedAt": "2026-01-20T11:00:00.000Z",
+    "approvedBy": "Higher Education Commission Reviewer"
+  },
+  {
+    "id": "SCH-PMMVY-005",
+    "code": "PMMVY",
+    "title": "Pradhan Mantri Matru Vandana Yojana",
+    "shortDescription": "Maternity benefit cash incentive of ₹5,000 in two installments for pregnant women and lactating mothers for health and nutritional support.",
+    "detailedOverview": "PMMVY is a Centrally Sponsored Scheme aimed at providing partial compensation for wage loss in terms of cash incentive so that the woman can take adequate rest before and after delivery of the first living child, promoting improved health seeking behaviour.",
+    "sector": "Healthcare",
+    "level": "Central",
+    "state": "All India",
+    "ministry": "Ministry of Women and Child Development",
+    "department": "Mission Shakti - Directorate of Maternal Health",
+    "benefits": [
+      "Cash incentive of ₹5,000 for first child in two installments (₹3,000 at ANC registration + ₹2,000 at child birth/immunization)",
+      "Additional incentive of ₹6,000 for second child if girl child to promote child sex ratio",
+      "Direct transfer into Aadhaar-seeded Jan Dhan or savings account"
+    ],
+    "financialAssistance": "₹5,000 to ₹6,000 direct cash incentive",
+    "rules": [
+      {
+        "id": "pmmvy_gender",
+        "field": "gender",
+        "operator": "equals",
+        "value": "female",
+        "description": "Applicant must be a pregnant woman or lactating mother",
+        "mandatory": true
+      },
+      {
+        "id": "pmmvy_age",
+        "field": "age",
+        "operator": "greater_than_or_equal",
+        "value": 19,
+        "description": "Mother must be at least 19 years of age at pregnancy registration",
+        "mandatory": true
+      },
+      {
+        "id": "pmmvy_income",
+        "field": "annualIncome",
+        "operator": "less_than_or_equal",
+        "value": 800000,
+        "description": "Family income must not exceed ₹8,00,000 (priority to SC/ST/Divyangjan/BPL)",
+        "mandatory": false
+      }
+    ],
+    "exclusions": [
+      "Women who are in regular employment with the Central Government or State Governments or Public Sector Undertakings (PSUs)",
+      "Those who are in receipt of similar benefits under any law for the time being in force"
+    ],
+    "requiredDocuments": [
+      {
+        "id": "doc_mcp",
+        "name": "Mother and Child Protection (MCP) Card",
+        "description": "Issued during early registration at Anganwadi / Health Sub-Center",
+        "mandatory": true,
+        "issuingAuthority": "Anganwadi / Primary Health Centre"
+      },
+      {
+        "id": "doc_aadhaar_m",
+        "name": "Aadhaar of Mother and Husband",
+        "description": "Identity verification for DBT transfer",
+        "mandatory": true,
+        "issuingAuthority": "UIDAI"
+      },
+      {
+        "id": "doc_birth",
+        "name": "Child Birth Certificate & Immunization Record",
+        "description": "Required for 2nd installment claim",
+        "mandatory": false,
+        "issuingAuthority": "Municipal Registrar"
+      }
+    ],
+    "applicationProcedure": [
+      "Register pregnancy at nearest Anganwadi Centre (AWC) or approved health facility within 570 days of LMP",
+      "Submit Form 1A with MCP Card details and Aadhaar-seeded bank passbook",
+      "Anganwadi Worker / ASHA registers the beneficiary on pmmvy.wcd.gov.in portal",
+      "Direct Benefit Transfer upon supervisor validation"
+    ],
+    "effectiveDates": {
+      "isOngoing": true,
+      "startDate": "2017-01-01"
+    },
+    "officialUrl": "https://pmmvy.wcd.gov.in",
+    "portalHelpline": "011-23382393",
+    "status": "approved",
+    "isDemo": false,
+    "version": 1,
+    "sourceEvidence": {
+      "documentId": "DOC-WCD-PMMVY-2023",
+      "documentTitle": "Mission Shakti Guidelines - Pradhan Mantri Matru Vandana Yojana 2.0",
+      "gazetteNumber": "WCD/Mission-Shakti/2023-Maternity",
+      "gazetteDate": "2023-04-01",
+      "pageReferences": [
+        3,
+        8,
+        14
+      ],
+      "extractedParagraphSnippet": "Maternity benefits under PMMVY 2.0 are provided to eligible pregnant and lactating mothers to compensate wage loss and encourage healthy nutrition practices."
+    },
+    "createdAt": "2026-01-22T10:00:00.000Z",
+    "updatedAt": "2026-01-22T10:00:00.000Z",
+    "approvedAt": "2026-01-22T11:00:00.000Z",
+    "approvedBy": "Directorate of Maternal Child Welfare"
+  },
+  {
+    "id": "SCH-DEMO-YUVA-006",
+    "code": "DEMO-UP-YUVA",
+    "title": "[DEMO] Mukhyamantri Yuva Udyami Vikas Yojana",
+    "shortDescription": "FICTIONAL TEST SCHEME: State-level interest-free working capital loan of ₹2,00,000 for rural youth aged 18 to 35 in Uttar Pradesh.",
+    "detailedOverview": "NOTICE: THIS IS A SYNTHETIC FICTIONAL TEST SCHEME CREATED SPECIFICALLY FOR QA DEMONSTRATION AND AUDIT TRAIL TESTING. IT DOES NOT CONFER REAL GOVERNMENT BENEFITS. Synthesized to test state-level residence filters, age caps, and micro-loan eligibility.",
+    "sector": "MSME",
+    "level": "State",
+    "state": "Uttar Pradesh",
+    "ministry": "Department of Micro, Small & Medium Enterprises (UP Demo)",
+    "department": "Youth Self-Employment Mission (Synthetic)",
+    "benefits": [
+      "Interest-free working capital loan up to ₹2,00,000",
+      "3-year repayment tenure with 6-month moratorium",
+      "Free digital bookkeeping kit and QR standee"
+    ],
+    "financialAssistance": "₹2,00,000 zero-interest working capital loan (Fictional Demo)",
+    "rules": [
+      {
+        "id": "demo_state",
+        "field": "state",
+        "operator": "equals",
+        "value": "Uttar Pradesh",
+        "description": "Applicant must be a permanent resident of Uttar Pradesh",
+        "mandatory": true
+      },
+      {
+        "id": "demo_age_min",
+        "field": "age",
+        "operator": "greater_than_or_equal",
+        "value": 18,
+        "description": "Applicant must be at least 18 years of age",
+        "mandatory": true
+      },
+      {
+        "id": "demo_age_max",
+        "field": "age",
+        "operator": "less_than_or_equal",
+        "value": 35,
+        "description": "Applicant must not be older than 35 years",
+        "mandatory": true
+      },
+      {
+        "id": "demo_income",
+        "field": "annualIncome",
+        "operator": "less_than_or_equal",
+        "value": 300000,
+        "description": "Annual family income must not exceed ₹3,00,000",
+        "mandatory": true
+      }
+    ],
+    "exclusions": [
+      "Defaulters of prior bank loans",
+      "Full-time government employees"
+    ],
+    "requiredDocuments": [
+      {
+        "id": "doc_demo_domicile",
+        "name": "Uttar Pradesh Domicile Certificate",
+        "description": "Proof of residence in UP",
+        "mandatory": true,
+        "issuingAuthority": "Tehsildar UP"
+      },
+      {
+        "id": "doc_demo_aadhaar",
+        "name": "Aadhaar Card",
+        "description": "Identity and age verification",
+        "mandatory": true,
+        "issuingAuthority": "UIDAI"
+      }
+    ],
+    "applicationProcedure": [
+      "DEMO ONLY: Submit synthetic test profile in SAARTHI wizard",
+      "Select Uttar Pradesh as state and observe deterministic rule validation"
+    ],
+    "effectiveDates": {
+      "isOngoing": true,
+      "startDate": "2025-01-01"
+    },
+    "officialUrl": "https://up.gov.in/demo-testing-portal",
+    "portalHelpline": "Demo Portal Testing Helpline: 0522-000000",
+    "status": "approved",
+    "isDemo": true,
+    "version": 1,
+    "sourceEvidence": {
+      "documentId": "DOC-SYNTHETIC-UP-01",
+      "documentTitle": "Synthetic Testing Draft: UP Yuva Udyami Rules 2025 (Fictional)",
+      "gazetteNumber": "DEMO-UP-2025-X",
+      "gazetteDate": "2025-01-01",
+      "pageReferences": [
+        1
+      ],
+      "extractedParagraphSnippet": "[SYNTHETIC BENCHMARK RECORD] Fictional scheme record used for testing multi-parameter rule engines and state boundary enforcement in SAARTHI platform."
+    },
+    "createdAt": "2026-02-01T10:00:00.000Z",
+    "updatedAt": "2026-02-01T10:00:00.000Z",
+    "approvedAt": "2026-02-01T11:00:00.000Z",
+    "approvedBy": "SAARTHI System Testing QA Lead"
+  },
+  {
+    "id": "SCH-DEMO-TAB-007",
+    "code": "DEMO-MH-VIDYA",
+    "title": "[DEMO] Saraswati Digital Vidya Tablet Scheme",
+    "shortDescription": "FICTIONAL TEST SCHEME: Free 10-inch digital learning tablet and 4G data voucher for female STEM college students in Maharashtra.",
+    "detailedOverview": "NOTICE: THIS IS A SYNTHETIC FICTIONAL TEST SCHEME CREATED SPECIFICALLY FOR QA DEMONSTRATION AND AUDIT TRAIL TESTING. IT DOES NOT CONFER REAL GOVERNMENT BENEFITS. Demonstrates gender-specific quotas and higher education enrollment rules.",
+    "sector": "Education",
+    "level": "State",
+    "state": "Maharashtra",
+    "ministry": "Higher & Technical Education Department (MH Demo)",
+    "department": "Directorate of Technical Education (Synthetic)",
+    "benefits": [
+      "Free 10-inch 64GB Android Tablet preloaded with academic e-books",
+      "1-year 2GB/day 4G/5G data connectivity SIM card",
+      "Access to virtual science and engineering lab simulations"
+    ],
+    "financialAssistance": "Hardware tablet + ₹12,000 digital connectivity grant (Demo)",
+    "rules": [
+      {
+        "id": "tab_state",
+        "field": "state",
+        "operator": "equals",
+        "value": "Maharashtra",
+        "description": "Applicant must be domiciled in the State of Maharashtra",
+        "mandatory": true
+      },
+      {
+        "id": "tab_gender",
+        "field": "gender",
+        "operator": "equals",
+        "value": "female",
+        "description": "Scheme is exclusively reserved for female students",
+        "mandatory": true
+      },
+      {
+        "id": "tab_edu",
+        "field": "educationStatus",
+        "operator": "in",
+        "value": [
+          "undergraduate",
+          "postgraduate"
+        ],
+        "description": "Applicant must be actively enrolled in Undergraduate or Postgraduate college",
+        "mandatory": true
+      },
+      {
+        "id": "tab_income",
+        "field": "annualIncome",
+        "operator": "less_than_or_equal",
+        "value": 400000,
+        "description": "Annual family income must be under ₹4,00,000",
+        "mandatory": true
+      }
+    ],
+    "exclusions": [
+      "Students who have previously received a government laptop/tablet within past 3 years"
+    ],
+    "requiredDocuments": [
+      {
+        "id": "doc_mh_dom",
+        "name": "Maharashtra Domicile Certificate",
+        "description": "Valid proof of MH residency",
+        "mandatory": true,
+        "issuingAuthority": "Collector Office Maharashtra"
+      },
+      {
+        "id": "doc_clg_id",
+        "name": "College STEM Enrollment Certificate",
+        "description": "Certified by College Principal",
+        "mandatory": true,
+        "issuingAuthority": "Affiliated University College"
+      }
+    ],
+    "applicationProcedure": [
+      "DEMO ONLY: Test by selecting Maharashtra + Female + Undergraduate in Profile Wizard",
+      "Verify deterministic eligibility calculation and document checklist"
+    ],
+    "effectiveDates": {
+      "isOngoing": true,
+      "startDate": "2025-06-01"
+    },
+    "officialUrl": "https://maharashtra.gov.in/demo-saraswati-tablet",
+    "portalHelpline": "Demo QA Support: 022-000000",
+    "status": "approved",
+    "isDemo": true,
+    "version": 1,
+    "sourceEvidence": {
+      "documentId": "DOC-SYNTHETIC-MH-02",
+      "documentTitle": "Synthetic Policy Draft: MH Saraswati Tablet Scheme 2025 (Fictional)",
+      "gazetteNumber": "DEMO-MH-2025-DTE",
+      "gazetteDate": "2025-06-01",
+      "pageReferences": [
+        1,
+        2
+      ],
+      "extractedParagraphSnippet": "[SYNTHETIC BENCHMARK RECORD] Fictional educational welfare initiative designed to validate multi-tiered conditional filters on state residency and gender."
+    },
+    "createdAt": "2026-02-05T10:00:00.000Z",
+    "updatedAt": "2026-02-05T10:00:00.000Z",
+    "approvedAt": "2026-02-05T11:00:00.000Z",
+    "approvedBy": "SAARTHI System Testing QA Lead"
+  }
+]

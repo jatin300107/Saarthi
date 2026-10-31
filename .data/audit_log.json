@@ -1,0 +1,98 @@
+[
+  {
+    "id": "AUD-1793208465497-714",
+    "timestamp": "2026-10-28T17:27:45.497Z",
+    "actor": {
+      "id": "usr_admin_01",
+      "name": "Sh. Rajesh Verma",
+      "email": "admin@saarthi.gov.in",
+      "role": "admin",
+      "designation": "Joint Secretary (Scheme Governance)",
+      "department": "Department of Public Services"
+    },
+    "action": "DATABASE_RESET_TO_DEMO",
+    "targetId": "system_storage",
+    "targetType": "system",
+    "summary": "Administrator Sh. Rajesh Verma reset the database to baseline schemes, documents, and audit history."
+  },
+  {
+    "id": "AUD-001",
+    "timestamp": "2026-01-10T09:30:00.000Z",
+    "actor": {
+      "id": "system_admin",
+      "name": "System Gazette Registrar",
+      "email": "registrar@saarthi.gov.in",
+      "role": "admin",
+      "designation": "Deputy Director (Policy & Data)",
+      "department": "Ministry of Electronics & IT"
+    },
+    "action": "DOCUMENT_UPLOADED",
+    "targetId": "DOC-GAZ-AGRI-2019",
+    "targetType": "document",
+    "summary": "Uploaded official PM-KISAN operational circular PDF."
+  },
+  {
+    "id": "AUD-002",
+    "timestamp": "2026-01-10T09:35:00.000Z",
+    "actor": {
+      "id": "system_admin",
+      "name": "System Gazette Registrar",
+      "email": "registrar@saarthi.gov.in",
+      "role": "admin",
+      "designation": "Deputy Director (Policy & Data)",
+      "department": "Ministry of Electronics & IT"
+    },
+    "action": "AI_EXTRACTION_COMPLETED",
+    "targetId": "DOC-GAZ-AGRI-2019",
+    "targetType": "document",
+    "summary": "Gemini extracted structured scheme draft with 3 deterministic rules and 3 required documents."
+  },
+  {
+    "id": "AUD-003",
+    "timestamp": "2026-01-10T11:00:00.000Z",
+    "actor": {
+      "id": "system_admin",
+      "name": "System Gazette Registrar",
+      "email": "registrar@saarthi.gov.in",
+      "role": "admin",
+      "designation": "Deputy Director (Policy & Data)",
+      "department": "Ministry of Electronics & IT"
+    },
+    "action": "SCHEME_APPROVED",
+    "targetId": "SCH-PM-KISAN-001",
+    "targetType": "scheme",
+    "summary": "Verified and approved PM-KISAN for citizen access."
+  },
+  {
+    "id": "AUD-004",
+    "timestamp": "2026-01-12T11:00:00.000Z",
+    "actor": {
+      "id": "system_admin",
+      "name": "System Gazette Registrar",
+      "email": "registrar@saarthi.gov.in",
+      "role": "admin",
+      "designation": "Deputy Director (Policy & Data)",
+      "department": "Ministry of Electronics & IT"
+    },
+    "action": "SCHEME_APPROVED",
+    "targetId": "SCH-PM-JAY-002",
+    "targetType": "scheme",
+    "summary": "Verified and approved Ayushman Bharat PM-JAY for citizen access."
+  },
+  {
+    "id": "AUD-005",
+    "timestamp": "2026-02-01T11:00:00.000Z",
+    "actor": {
+      "id": "system_admin",
+      "name": "System Gazette Registrar",
+      "email": "registrar@saarthi.gov.in",
+      "role": "admin",
+      "designation": "Deputy Director (Policy & Data)",
+      "department": "Ministry of Electronics & IT"
+    },
+    "action": "SCHEME_APPROVED",
+    "targetId": "SCH-DEMO-YUVA-006",
+    "targetType": "scheme",
+    "summary": "Approved [DEMO] Mukhyamantri Yuva Udyami Vikas Yojana for synthetic test evaluation."
+  }
+]

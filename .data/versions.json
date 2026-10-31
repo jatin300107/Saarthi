@@ -1,0 +1,114 @@
+{
+  "SCH-PM-KISAN-001": [
+    {
+      "version": 1,
+      "updatedAt": "2026-01-10T10:00:00.000Z",
+      "updatedBy": "Dr. R. Sharma (Director of Agricultural Credit)",
+      "changeSummary": "Official baseline gazette ingestion and verification.",
+      "snapshot": {
+        "title": "Pradhan Mantri Kisan Samman Nidhi",
+        "level": "Central",
+        "state": "All India",
+        "sector": "Agriculture",
+        "status": "approved",
+        "rulesCount": 3
+      }
+    }
+  ],
+  "SCH-PM-JAY-002": [
+    {
+      "version": 1,
+      "updatedAt": "2026-01-12T10:00:00.000Z",
+      "updatedBy": "National Health Authority Verification Cell",
+      "changeSummary": "Official baseline gazette ingestion and verification.",
+      "snapshot": {
+        "title": "Ayushman Bharat Pradhan Mantri Jan Arogya Yojana",
+        "level": "Central",
+        "state": "All India",
+        "sector": "Healthcare",
+        "status": "approved",
+        "rulesCount": 2
+      }
+    }
+  ],
+  "SCH-PMEGP-003": [
+    {
+      "version": 1,
+      "updatedAt": "2026-01-15T10:00:00.000Z",
+      "updatedBy": "KVIC Joint Secretary (Enterprise)",
+      "changeSummary": "Official baseline gazette ingestion and verification.",
+      "snapshot": {
+        "title": "Prime Minister's Employment Generation Programme",
+        "level": "Central",
+        "state": "All India",
+        "sector": "MSME",
+        "status": "approved",
+        "rulesCount": 2
+      }
+    }
+  ],
+  "SCH-VIDYA-004": [
+    {
+      "version": 1,
+      "updatedAt": "2026-01-20T10:00:00.000Z",
+      "updatedBy": "Higher Education Commission Reviewer",
+      "changeSummary": "Official baseline gazette ingestion and verification.",
+      "snapshot": {
+        "title": "Pradhan Mantri Vidya Lakshmi Higher Education Scheme",
+        "level": "Central",
+        "state": "All India",
+        "sector": "Education",
+        "status": "approved",
+        "rulesCount": 2
+      }
+    }
+  ],
+  "SCH-PMMVY-005": [
+    {
+      "version": 1,
+      "updatedAt": "2026-01-22T10:00:00.000Z",
+      "updatedBy": "Directorate of Maternal Child Welfare",
+      "changeSummary": "Official baseline gazette ingestion and verification.",
+      "snapshot": {
+        "title": "Pradhan Mantri Matru Vandana Yojana",
+        "level": "Central",
+        "state": "All India",
+        "sector": "Healthcare",
+        "status": "approved",
+        "rulesCount": 3
+      }
+    }
+  ],
+  "SCH-DEMO-YUVA-006": [
+    {
+      "version": 1,
+      "updatedAt": "2026-02-01T10:00:00.000Z",
+      "updatedBy": "SAARTHI System Testing QA Lead",
+      "changeSummary": "Official baseline gazette ingestion and verification.",
+      "snapshot": {
+        "title": "[DEMO] Mukhyamantri Yuva Udyami Vikas Yojana",
+        "level": "State",
+        "state": "Uttar Pradesh",
+        "sector": "MSME",
+        "status": "approved",
+        "rulesCount": 4
+      }
+    }
+  ],
+  "SCH-DEMO-TAB-007": [
+    {
+      "version": 1,
+      "updatedAt": "2026-02-05T10:00:00.000Z",
+      "updatedBy": "SAARTHI System Testing QA Lead",
+      "changeSummary": "Official baseline gazette ingestion and verification.",
+      "snapshot": {
+        "title": "[DEMO] Saraswati Digital Vidya Tablet Scheme",
+        "level": "State",
+        "state": "Maharashtra",
+        "sector": "Education",
+        "status": "approved",
+        "rulesCount": 4
+      }
+    }
+  ]
+}

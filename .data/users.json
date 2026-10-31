@@ -1,0 +1,54 @@
+[
+  {
+    "id": "usr_admin_01",
+    "name": "Sh. Rajesh Verma",
+    "email": "admin@saarthi.gov.in",
+    "passwordHash": "$2b$10$Uzjwau0HHvxl37kJnVPiA.Z3ypI9uMRi8kCrB3sEDnKnhGaS11C2u",
+    "role": "admin",
+    "designation": "Joint Secretary (Scheme Governance)",
+    "department": "Department of Public Services",
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "usr_reviewer_01",
+    "name": "Dr. Sunita Kulkarni",
+    "email": "reviewer@saarthi.gov.in",
+    "passwordHash": "$2b$10$DKd8VaUaT14O1Ar.kwg0/u9lTdhem/ZRb3BgDO7Rb9xXSN.bm7QmC",
+    "role": "reviewer",
+    "designation": "Senior Regulatory Verification Officer",
+    "department": "Directorate of Citizen Welfare",
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "usr_citizen_01",
+    "name": "Ramesh Kumar",
+    "email": "citizen@saarthi.gov.in",
+    "passwordHash": "$2b$10$VTAK6EBgh3Vm5e0NZ.WNB.nvQm9E1sUyAmQ3xhycv9KH3nfeAyHrC",
+    "role": "citizen",
+    "designation": "Citizen Beneficiary",
+    "department": "General Public",
+    "createdAt": "2026-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "usr_1793123606262_327",
+    "name": "Malicious User",
+    "email": "attacker_1793123606180@test.org",
+    "passwordHash": "$2b$10$lb4oFjN4sTXiP3nPhyhwUuSu6qtOjIlhM4xSp89cRUOUXftMMhOqO",
+    "role": "reviewer",
+    "designation": "Citizen Beneficiary",
+    "department": "General Public",
+    "createdAt": "2026-10-27T17:53:26.262Z",
+    "updatedAt": "2026-10-27T17:53:26.269Z"
+  },
+  {
+    "id": "usr_1793208465473_126",
+    "name": "Malicious User",
+    "email": "attacker_1793208465389@test.org",
+    "passwordHash": "$2b$10$AOXY.fle28zhJGfCai2Sc.hEhcEGo984y/aGke9odeuRIYEokpTBK",
+    "role": "reviewer",
+    "designation": "Citizen Beneficiary",
+    "department": "General Public",
+    "createdAt": "2026-10-28T17:27:45.473Z",
+    "updatedAt": "2026-10-28T17:27:45.480Z"
+  }
+]

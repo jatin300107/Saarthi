@@ -1,0 +1,52 @@
+[
+  {
+    "id": "DOC-GAZ-AGRI-2019",
+    "filename": "PM-KISAN-Operational-Guidelines-2019.pdf",
+    "fileSize": 1048576,
+    "mimeType": "application/pdf",
+    "uploadedAt": "2026-01-10T09:30:00.000Z",
+    "uploadedBy": "registrar@saarthi.gov.in",
+    "pageCount": 16,
+    "gazetteNumber": "No. 1-1/2019-Credit-I",
+    "extractedText": "Operational Guidelines of Pradhan Mantri Kisan Samman Nidhi (PM-KISAN). The Scheme aims to provide income support of ₹6,000 per year to landholding farmer families...",
+    "pageTexts": [
+      {
+        "page": 1,
+        "text": "Government of India, Ministry of Agriculture and Farmers Welfare. PM-KISAN Operational Guidelines."
+      },
+      {
+        "page": 2,
+        "text": "Definition of beneficiary family: Farmer family comprising of husband, wife and minor children who own cultivable land."
+      },
+      {
+        "page": 3,
+        "text": "Exclusion Categories: Institutional landholders, constitutional post holders, income tax payees."
+      }
+    ],
+    "status": "draft_generated",
+    "generatedSchemeId": "SCH-PM-KISAN-001"
+  },
+  {
+    "id": "DOC-GAZ-NHA-2018",
+    "filename": "AB-PMJAY-Framework-Notification-2018.pdf",
+    "fileSize": 2097152,
+    "mimeType": "application/pdf",
+    "uploadedAt": "2026-01-12T09:15:00.000Z",
+    "uploadedBy": "nha.officer@saarthi.gov.in",
+    "pageCount": 32,
+    "gazetteNumber": "MoHFW-NHPM-2018/14",
+    "extractedText": "National Health Protection Scheme Ayushman Bharat PM-JAY. Hospitalization benefit of ₹5,00,000 per year per family for secondary and tertiary care...",
+    "pageTexts": [
+      {
+        "page": 1,
+        "text": "Ministry of Health and Family Welfare, Government of India. PM-JAY Operational Manual."
+      },
+      {
+        "page": 5,
+        "text": "Target Beneficiaries: Based on SECC 2011 rural deprivation criteria D1 through D7 and urban occupational categories."
+      }
+    ],
+    "status": "draft_generated",
+    "generatedSchemeId": "SCH-PM-JAY-002"
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "name": "SAARTHI — AI-Assisted Government Scheme Knowledge Platform",
+  "description": "A citizen-centric welfare discovery portal and administrative document ingestion & verification engine for Indian government schemes with deterministic eligibility evaluation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
