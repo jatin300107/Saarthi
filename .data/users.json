@@ -50,5 +50,16 @@
     "department": "General Public",
     "createdAt": "2026-10-28T17:27:45.473Z",
     "updatedAt": "2026-10-28T17:27:45.480Z"
+  },
+  {
+    "id": "usr_1793454767014_614",
+    "name": "Malicious User",
+    "email": "attacker_1793454766929@test.org",
+    "passwordHash": "$2b$10$Iu5QeZUzYp3kQ.9OtCF1FeICdClQBzUAv1x6AwxtcqQEQ5nVonqlO",
+    "role": "reviewer",
+    "designation": "Citizen Beneficiary",
+    "department": "General Public",
+    "createdAt": "2026-10-31T13:52:47.014Z",
+    "updatedAt": "2026-10-31T13:52:47.024Z"
   }
 ]
